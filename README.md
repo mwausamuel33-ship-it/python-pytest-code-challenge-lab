@@ -1,3 +1,5 @@
+# Pytest Lab: Creating a Code Challenge Test Suite
+
 ## Overview 
 ### Introduction: Algorithms in Interviews & Testing
 
@@ -44,7 +46,7 @@ Before we begin coding, let's complete the initial setup for this lesson:
     * Run `pipenv shell` to enter the virtual environment.
 
 ### Instructions
-1. Step 1: Understand the Challenge (5 min)
+1. Step 1: Understand the Challenge
 * You need to write tests for a function that finds the longest palindromic substring in a given string. A palindrome is a word, phrase, or sequence that reads the same backward as forward.
 * Function Signature
 ```python
@@ -69,6 +71,23 @@ def longest_palindromic_substring(s):
     * s consists of only digits and English letters.
 
 2. Step 2: Install Pytest
+* Add pytest dependency to the Pipfile and install
+```bash
+pip install pytest
+```
+* Create a pytest.ini file in the root directory with the following code:
+```
+[pytest]
+pythonpath = . lib
+```
+* Create a testing folder inside lib/
+```bash
+mkdir lib/testing
+```
+* Create the test_palindrome.py file
+```bash
+touch lib/testing/test_palindrome.py
+```
 
 
 3. Step 3: Write Your Test Suite
